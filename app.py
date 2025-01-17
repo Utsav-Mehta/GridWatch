@@ -21,7 +21,7 @@ def load_data(db_path):
     df["date"] = pd.to_datetime(df["timestamp"]).dt.date
     df["hour"] = pd.to_datetime(df["timestamp"]).dt.hour
     df["weekday"] = pd.to_datetime(df["timestamp"]).dt.weekday
-    st.write(f"Data loaded in {time.time() - start_time:.2f} seconds")
+    st.write(f"⚡ Data loaded in {time.time() - start_time:.2f} seconds")
     return df
 
 # Load dataset
