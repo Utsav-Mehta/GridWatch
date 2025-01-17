@@ -34,7 +34,8 @@ dashboard_mode = st.sidebar.selectbox("Choose Dashboard", options=["General Over
 
 if dashboard_mode == "General Overview":
     # General Insights Dashboard
-    st.title("GridWatch: General Insights Dashboard")
+    st.title("GridWatch: NYC Congestion Pricing Impact Analysis")
+    st.subheader("General Insights Dashboard (After Congestion Pricing In-effect)")
 
     # Create two columns
     col1, col2 = st.columns(2)
