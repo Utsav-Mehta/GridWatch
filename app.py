@@ -89,21 +89,35 @@ if dashboard_mode == "General Overview":
         st_folium(marker_map, width=800, height=500)
 
         # Hourly Traffic Distribution
-        st.subheader("Hourly Traffic Distribution for Top Streets")
+        # st.subheader("Hourly Traffic Distribution for Top Streets")
+        # top_streets_list = top_streets["street_name"].tolist()
+        # hourly_distribution = data[data["street_name"].isin(top_streets_list)]
+        # hourly_distribution = hourly_distribution.groupby(["street_name", "hour"])["count"].mean().reset_index()
+
+        # fig_hourly_distribution = px.line(
+        #     hourly_distribution,
+        #     x="hour",
+        #     y="count",
+        #     color="street_name",
+        #     title="Hourly Traffic Distribution for Top Streets",
+        #     labels={"hour": "Hour of Day", "count": "Average Vehicle Count", "street_name": "Street Name"},
+        # )
+        # st.plotly_chart(fig_hourly_distribution, use_container_width=True)
+
+        st.subheader("Vehicle Count Distribution for Top Streets")
         top_streets_list = top_streets["street_name"].tolist()
-        hourly_distribution = data[data["street_name"].isin(top_streets_list)]
-        hourly_distribution = hourly_distribution.groupby(["street_name", "hour"])["count"].mean().reset_index()
+        distribution_data = data[data["street_name"].isin(top_streets_list)]
 
-        fig_hourly_distribution = px.line(
-            hourly_distribution,
-            x="hour",
+        fig_box_plot = px.box(
+            distribution_data,
+            x="street_name",
             y="count",
-            color="street_name",
-            title="Hourly Traffic Distribution for Top Streets",
-            labels={"hour": "Hour of Day", "count": "Average Vehicle Count", "street_name": "Street Name"},
+            title="Vehicle Count Distribution for Top Streets",
+            labels={"street_name": "Street Name", "count": "Vehicle Count"},
+            points=False,  # Adds individual data points to the box plot
         )
-        st.plotly_chart(fig_hourly_distribution, use_container_width=True)
 
+        st.plotly_chart(fig_box_plot, use_container_width=True)
 elif dashboard_mode == "Detailed Analysis":
     st.title("GridWatch: Detailed Analysis Dashboard")
 
