@@ -1,8 +1,10 @@
 # 🚗 GridWatch: Analysis of Impact of NYC Congestion Pricing
 
-GridWatch is a Python project designed to monitor and analyze vehicle counts across various streets of Lower Manhattan after implementation of congestion pricings. By collecting and processing traffic data, it aims to provide insights into traffic patterns and can assist in adjustment to congestion pricing.
 ---
 
+GridWatch is a Python project designed to monitor and analyze vehicle counts across various streets of Lower Manhattan after implementation of congestion pricings. By collecting and processing traffic data, it aims to provide insights into traffic patterns and can assist in adjustment to congestion pricing.
+
+---
 ## Features
 
 - **Data Collection**: Utilizes Jupyter Notebooks for gathering vehicle count data.
