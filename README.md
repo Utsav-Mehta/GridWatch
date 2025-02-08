@@ -8,10 +8,12 @@ GridWatch is a Python project designed to monitor and analyze vehicle counts acr
 ## Features
 
 - **Data Collection**: Utilizes Jupyter Notebooks for gathering vehicle count data.
-- **Data Storage**: Stores collected data in a SQLite database for efficient retrieval and analysis.
+- **Data Storage**: Stores collected data in an SQLite database for efficient retrieval and analysis.
 - **Data Analysis**: Processes and analyzes traffic data to identify patterns and trends and showcase in a streamlit application.
 
 Click the link to access the [Streamlit App](https://gridwatch-nyc.streamlit.app/).
+
+Streamlit has a brief analysis covering 17 to 19 PM. For a detailed overview: [Colab Notebook](https://colab.research.google.com/drive/1q8wAHLna80kFiKuRZDxBWMdWFlQm1lhr#scrollTo=tEWE1jJFCN7L)
 
 ---
 <p align="center">
