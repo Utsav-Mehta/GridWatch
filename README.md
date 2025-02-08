@@ -19,7 +19,7 @@ Streamlit has a brief analysis covering 17 to 19 PM. For a detailed overview: [C
 <p align="center">
   <img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit" width="70" height="50">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" width="80" height="40">
+  <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python" width="85" height="30">
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://www.sqlite.org/images/sqlite370_banner.gif" alt="SQLite" width="80" height="40">
   &nbsp;&nbsp;&nbsp;&nbsp;
